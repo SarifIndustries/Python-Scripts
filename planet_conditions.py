@@ -32,7 +32,7 @@ AMOUNTS = [
 PLANET_CONDITIONS = [
 #   Настройка              Вероятность
     ("Feeble enemies",     2),
-    ("Long cycles",        3),
+    ("Long cycles",        6),
     ("Double iron",        1),
     ("Maze structure",     4),
 ]
@@ -50,7 +50,7 @@ def weighted_choice(settings: list):
     section = 0
     for (s, w) in settings:
         section += w
-        if r < section:
+        if r > section:
             # Попали в секцию для этого элемента.
             choice = s
             break
