@@ -1,5 +1,7 @@
-*
+/*
 !.gitignore
 !planet_conditions.py
 !risk_taker_odds.py
 !in_files_replace.py
+!TinkoffCTF/
+
